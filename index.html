@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع التنمر</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+            color: #343a40;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #0056b3;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #003d80;
+            border-radius: 5px;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            flex: 1;
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        ul {
+            margin: 10px 0;
+            padding: 0;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            border-top: 5px solid #0056b3;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>التنمر: التعريف والحلول</h1>
+    </header>
+    <nav>
+        <a href="#" onclick="showSection('home')">الرئيسية</a>
+        <a href="#" onclick="showSection('about')">ما هو التنمر؟</a>
+        <a href="#" onclick="showSection('types')">أنواع التنمر</a>
+        <a href="#" onclick="showSection('solutions')">كيف يمكنك التصدي للتنمر؟</a>
+        <a href="#" onclick="showSection('resources')">موارد إضافية</a>
+        <a href="#" onclick="showSection('contact')">اتصل بنا</a>
+    </nav>
+    <main>
+        <div id="home">
+            <h2>مرحباً بك في موقعنا حول التنمر</h2>
+            <p>
+                يقدم موقعنا معلومات شاملة حول موضوع التنمر، بما في ذلك تعريفه، أنواعه، كيفية التصدي له، والموارد المتاحة للحصول على المساعدة.
+                تصفح الصفحات المختلفة للحصول على المعلومات التي تحتاجها.
+            </p>
+        </div>
+
+        <div id="about" class="hidden">
+            <h2>ما هو التنمر؟</h2>
+            <p>
+                التنمر هو سلوك عدواني يتكرر من قبل فرد أو مجموعة من الأفراد تجاه شخص آخر بشكل متعمد يهدف إلى إيذاءه أو إلحاق الأذى به. 
+                يمكن أن يحدث التنمر في مختلف البيئات مثل المدارس، أماكن العمل، وحتى على الإنترنت.
+            </p>
+        </div>
+
+        <div id="types" class="hidden">
+            <h2>أنواع التنمر</h2>
+            <ul>
+                <li><strong>التنمر الجسدي:</strong> يشمل الضرب، الدفع، أو أي نوع من الإيذاء الجسدي.</li>
+                <li><strong>التنمر اللفظي:</strong> يتضمن الإهانات، التهكم، أو التهديدات اللفظية.</li>
+                <li><strong>التنمر الاجتماعي:</strong> يشمل نشر الشائعات، العزل الاجتماعي، أو محاولة تحطيم سمعة الشخص.</li>
+                <li><strong>التنمر الإلكتروني:</strong> يتم عبر الإنترنت أو الرسائل النصية، ويتضمن التهديدات، الإساءة، أو نشر محتوى محرج.</li>
+            </ul>
+        </div>
+
+        <div id="solutions" class="hidden">
+            <h2>كيف يمكنك التصدي للتنمر؟</h2>
+            <p>هناك عدة طرق للتعامل مع التنمر، منها:</p>
+            <ul>
+                <li>التحدث إلى شخص موثوق به مثل الأصدقاء أو العائلة.</li>
+                <li>الإبلاغ عن التنمر إلى السلطات المعنية أو المسؤولين في المدرسة أو مكان العمل.</li>
+                <li>تعلم كيفية التصرف بثقة وهدوء في مواجهة المتنمرين.</li>
+                <li>الحصول على دعم من المتخصصين مثل الاستشاريين النفسيين إذا لزم الأمر.</li>
+            </ul>
+        </div>
+
+        <div id="resources" class="hidden">
+            <h2>موارد إضافية</h2>
+            <p>
+                إذا كنت بحاجة إلى مساعدة إضافية، يمكنك الاتصال بالخط الساخن لدعم ضحايا التنمر أو زيارة المواقع الإلكترونية المخصصة لهذه القضايا.
+            </p>
+        </div>
+
+        <div id="contact" class="hidden">
+            <h2>اتصل بنا</h2>
+            <p>
+                إذا كان لديك أي استفسارات أو تحتاج إلى مزيد من المعلومات، لا تتردد في التواصل معنا عبر البريد الإلكتروني:
+                <a href="mailto:info@bullyingwebsite.com">info@bullyingwebsite.com</a>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 جميع الحقوق محفوظة</p>
+        <p>Made by OMAR</p>
+    </footer>
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('main > div');
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+
+        // Show the home section by default
+        showSection('home');
+    </script>
+</body>
+</html>
